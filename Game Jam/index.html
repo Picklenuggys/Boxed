@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+    <title>Boxed</title>
+<body>
+<style>
+        #canvas{
+            border: 1px solid black;
+            display: none;
+            margin: 0 auto;
+			}
+		.background{
+		top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
+		display: inline;
+		z-index: -1;
+		position: absolute
+		}
+		
+		div{
+		display: block;
+		font-size: 50px;
+		text-align: center;
+        margin-top: 20px;
+		z-index: 1
+		}
+		span{
+		display: none;
+		font-size: 50px;
+		text-align: center;
+        margin-top: 20px;
+		z-index: 1
+		}
+		button{
+            padding: 10px 20px;
+            font-size: 40px;
+			width: 60px;
+			z-index: 1
+		}
+		input{
+		width: 390px;
+		height: 120px;
+		font-size: 60px;
+		text-align: center
+		}
+</style>
+<canvas id= "bg" class = "background" width= "800" height= "400"></canvas>
+<div id = "menu">
+<h1>Boxed</h1>
+<button id = "menu2controls">Controls</button>
+<button id = "start">start</button>
+<br>
+<button id = "credit">credits</button>
+<button id = "settings">Settings</button>
+<button id = "links">links</button>
+<br>
+</div>
+<span id = "credits">
+<h1>Credits</h1>
+<p>By Picklenuggys</p>
+<p> Music: made using Bandlab </p>
+<p> Images: made using MS paint </p>
+<button id = "credits2menu">Back to menu</button>
+</span>
+<span id = "link">
+<h1>links</h1>
+<button><a href = "https://www.youtube.com/channel/UCOpatK0nF8AElM1ASHyWGBw">First channel</a></button>
+<button><a href = "https://www.youtube.com/@PickleNuggees">Second channel</a></button>
+<br>
+<button id = "links2menu">Back to menu</button>
+</span>
+<span id = "setting">
+<h1>Settings</h1>
+<button id = "images">debug?</button>
+<button id = "sound">sound?</button>
+<button id = "music">music</button>
+<br>
+<button id = 'settings2menu'>Back to menu</button>
+</span>
+<span id = "death">
+<h1> GET UPPPPPPPPPPPP</h1>
+<button id = "respawn">RETRY</button>
+<p>so u dont accidentally press this, refresh the page</p>
+<p> to go to menu</p>
+</span>
+<span id = "control">
+<h1>Controls</h1>
+<p>WASD / arrow keys to move</p>
+<p>J/Z to attack</p>
+<p>space to jump</p>
+<h3>Tips:</h3>
+<p>Hit bubblewrap to gain height</p>
+<p>Hit tape to get stuck, jump to get out</p>
+<button id = "control2menu">Back</button>
+</span>
+<canvas id = "canvas" width = "800" height = "600"></canvas>
+<script src = "./js/starter.js"></script>
+<script src = "./js/keyBinds.js"></script>
+<script src = "./js/media/media.js"></script>
+<script src = "./js/htmlhandler.js"></script>
+<script src = "./js/objectHandler.js"></script>
+<script src = "./js/renderer&runner.js"></script>
+</body>
+</html>
